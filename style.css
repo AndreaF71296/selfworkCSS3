@@ -1,0 +1,145 @@
+*{
+    font-family: "Montserrat", serif;
+}
+
+nav{
+    background-color: rgba(38, 38, 38, 0.744);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoAulab{
+    width: 100px;
+    height: 100px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;  
+}
+
+.link:hover{
+    border-bottom: 2px solid rgb(216, 216, 87);
+}
+
+.listlink{
+    list-style-type: none;
+    display: flex;
+}
+
+header{
+    background-image: url(./media/background.jpeg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+.linkHome{
+    color: white;
+    text-decoration: none;
+}
+
+.btnArticle{
+    background-color: rgba(38, 38, 38, 0.744);
+    color: white;
+}
+
+.btnArticle:hover{
+    background-color: rgb(216, 216, 87);
+    color: black;
+}
+
+.titleArticle{
+    text-align: center;
+}
+
+.imagine{
+    width: 300px;
+}
+
+.container{
+   display: flex;
+   width: 60%;
+}
+
+aside{
+    background-color: rgb(216, 216, 87);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+}
+
+.btn_img{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    z-index: 99;
+}
+
+.btn_img:hover{
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes zoom {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.2);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+
+
+@media  screen and (max-width: 600px) {
+    .logoAulab{
+        width: 70px;
+        height: 70px;
+    }
+
+
+    main{
+        flex-direction: column;
+    }
+
+    .link:hover{
+        border-bottom: 2px solid rgb(216, 216, 87);
+    }
+
+    .listlink{
+        font-size: 7px;
+        align-items: center;
+    }
+
+    
+}
+    
+
+
+
+
+
+
+ 
+
+
+
